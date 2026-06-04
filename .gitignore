@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment files
+.env
+
+# IDE / editor
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Data and generated outputs
+data/exports/
+data/spark_outputs/
+*.csv
+*.parquet
+*.log
+
+# Docker / local volumes
+cassandra_data/
+
+# Archives
+*.zip
+*.tar
+*.gz
