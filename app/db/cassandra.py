@@ -1,19 +1,16 @@
 from cassandra.cluster import Cluster, Session
 from cassandra.query import dict_factory
 
-
-CASSANDRA_HOST = "127.0.0.1"
-CASSANDRA_PORT = 9042
-KEYSPACE = "financial_dwh"
+from app.core.config import settings
 
 
 def get_cluster() -> Cluster:
-    return Cluster([CASSANDRA_HOST], port=CASSANDRA_PORT)
+    return Cluster([settings.cassandra_host], port=settings.cassandra_port)
 
 
 def get_session() -> Session:
     cluster = get_cluster()
-    session = cluster.connect(KEYSPACE)
+    session = cluster.connect(settings.cassandra_keyspace)
     session.row_factory = dict_factory
     return session
 
