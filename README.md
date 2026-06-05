@@ -374,3 +374,10 @@ The current test result is:
 
 Overall, the platform demonstrates a complete financial market data warehouse workflow from ingestion to storage, API access, analytics, prediction, and MCP-based LLM access.
 
+## Demo Video
+
+The full demo video is available here:
+
+https://drive.google.com/file/d/1rEcgbCD6gaIryCuHquz6yWsKpn1lMEJy/view?usp=sharing
+
+If Google Drive preview is unavailable, the video can be downloaded from the same link.
